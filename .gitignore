@@ -8,8 +8,6 @@ application/logs/*
 
 !application/*/.htaccess
 
-application/config/database.php
-application/config/config.php
 
 db/*.gz
 composer.lock
@@ -38,3 +36,5 @@ uploads/*
 application/config/database.php
 dart/*
 ci_modules/*
+.env
+/src/uploads/*

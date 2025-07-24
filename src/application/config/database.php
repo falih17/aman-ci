@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'zing_crawler',
+	'hostname' => getenv('DB_HOST') ?: 'db',
+	'username' => getenv('DB_USER') ?: 'ci_user',
+	'password' => getenv('DB_PASS') ?: 'ci_password',
+	'database' => getenv('DB_NAME') ?: 'codeigniter',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
